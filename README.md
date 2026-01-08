@@ -11,18 +11,14 @@
 本分析では、公開されている実データを用いて擬似的な実験構造を構築し、
 施策の純粋な効果を定量的に推定することを目的とする。
 
----
 
 ## 分析目的・問い（Research Questions）
-
 - マークダウン施策は週次売上を**因果的に**押し上げているか  
 - その効果の大きさはどの程度か  
 - 祝日週（Holiday）において、施策効果は増幅するか  
 
----
 
 ## データセット
-
 本プロジェクトでは、Kaggle にて公開されている実世界データを使用している。
 
 **Walmart Recruiting – Store Sales Forecasting**
@@ -50,32 +46,22 @@ Store × Department 単位で提供しており、売上高に加えて以下の
 データ出典：  
 https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 
----
 
 ## 分析手法
-
 - Difference-in-Differences（DiD）
 - Store × Department 固定効果
 - 時間固定効果（週次）
 - 外生変数（経済指標・祝日要因）を含む回帰分析
 - 並行トレンド仮定の検証およびロバストネスチェック
 
----
 
 ## 分析結果
-
 ※ 現在は分析途中であり、推定結果および図表は今後追加予定。
 
----
-
 ## 考察・示唆
-
 ※ 分析結果に基づき、マークダウン施策の有効性や実務上の示唆について考察を追加予定。
 
----
-
 ## フォルダ構成
-
 ```
 DID_analysis/
 ├── README.md
@@ -93,18 +79,14 @@ This repository contains a causal inference project that evaluates the causal im
 The project is motivated by real-world business settings where randomized A/B testing is often infeasible.  
 By constructing a quasi-experimental design from publicly available data, the analysis aims to isolate the causal effect of promotion interventions from seasonal trends, macroeconomic factors, and store-specific characteristics.
 
----
 
 ## Research Questions
-
 - Do markdown promotions causally increase weekly sales?
 - How large is the estimated treatment effect?
 - Are promotion effects amplified during holiday weeks?
 
----
 
 ## Dataset
-
 This project uses publicly available real-world data from Kaggle.
 
 **Walmart Recruiting – Store Sales Forecasting**  
@@ -121,10 +103,8 @@ For causal inference purposes, additional variables such as treatment indicators
 Data source:  
 https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 
----
 
 ## Methodology
-
 - Difference-in-Differences (DiD)
 - Store × Department fixed effects
 - Weekly time fixed effects
@@ -132,14 +112,9 @@ https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 - Validation of the parallel trends assumption
 - Robustness checks under alternative specifications
 
----
-
 ## Results
-
 Results and figures will be added as the analysis progresses.
 
----
 
 ## Implications
-
 Based on the estimation results, business implications and decision-oriented insights regarding the effectiveness of markdown promotions will be discussed.
